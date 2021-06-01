@@ -11,12 +11,10 @@
 		* {
 			box-sizing: border-box;
 		}
-
 		body {
 			background: #eee;
 			margin: 20px 0;
 		}
-
 		article {
 			width: 21cm;
 			min-height: 29.7cm;
@@ -31,56 +29,46 @@
 		p {
 			margin: 0.3em 0;
 		}
-
 		h1 {
 			font-size: 25px;
 			margin-top: 0;
 		}
-
 		h4,
 		h5,
 		h6 {
 			font-weight: normal;
 		}
-
 		ol,
 		ul {
 			list-style: none;
 			padding: 0;
 			margin: 0;
 		}
-
 		strong {
 			font-weight: normal;
 			color: #f60;
 		}
-
 		a {
 			color: dimgrey;
 			text-decoration: none;
 			border-bottom: 1px solid dimgrey;
 		}
-
 		p,
 		li {
 			color: #666;
 		}
-
 		strong {
 			font-weight: normal;
 		}
-
 		h3,
 		h4,
 		h5,
 		h6 {
 			margin: 0;
 		}
-
 		.bio {
 			position: relative;
 		}
-
 		.bio img {
 			position: absolute;
 			top: 0;
@@ -92,26 +80,21 @@
 		.projects p {
 			color: #666;
 		}
-
 		.projects strong {
 			color: #f60;
 		}
-
 		.projects > ol {
 			margin-top: 0;
 			list-style-position: inside;
 			padding: 0;
 		}
-
 		.projects > ol > li {
 			margin-bottom: 24px;
 		}
-
 		.projects > ol > li > header {
 			display: flex;
 			justify-content: space-between;
 		}
-
 		.projects > ol > li h3 {
 			display: inline-block;
 		}
@@ -123,19 +106,15 @@
 			display: flex;
 			justify-content: space-between;
 		}
-
 		.skills > .wrapper > :first-child {
 			margin-right: 24px;
 		}
-
 		.skills > .wrapper > ul {
 			color: #666;
 		}
-
 		.skills > .wrapper strong {
 			color: #f60;
 		}
-
 		.skills > .wrapper > ul > li {
 			line-height: 1.2;
 			margin-bottom: 8px;
@@ -147,11 +126,9 @@
 			top: 0;
 			right: 0;
 		}
-
 		.openSource > ul > li {
 			margin-bottom: 24px;
 		}
-
 		.openSource header {
 			position: relative;
 			display: flex;
@@ -162,23 +139,19 @@
 		.jobs > ol > li {
 			margin: 12px 0;
 		}
-
 		.jobs header {
 			display: flex;
 			color: #666;
 			margin-bottom: 12px;
 		}
-
 		.jobs header > h3 {
 			font-size: 18px;
 			color: #333;
 		}
-
 		.jobs header > h4 {
 			margin-left: 1em;
 			font-size: 18px;
 		}
-
 		.jobs header > span {
 			font-size: 18px;
 			margin-left: auto;
@@ -191,22 +164,17 @@
 				margin: 0;
 				background: white;
 			}
-
 			article {
 				width: auto;
 				height: auto;
 				margin-bottom: 50px;
 			}
-
 			.bio img {
 				display: none;
 			}
-
 			.skills .wrapper {
 				flex-direction: column;
 			}
-
-
 			.jobs header {
 				flex-direction: column;
 			}
@@ -219,7 +187,7 @@
     </style>
     <style>
 
-		.scan > img{
+		.scan > img {
 			width: 90px;
 			margin-left: 640px;
 			position: absolute;
@@ -237,10 +205,22 @@
 		a[href]:after {
 			content: none !important;
 		}
-		a:link{text-decoration:none ; color:dimgrey;}
-		a:visited {text-decoration:none ; color:dimgrey;}
-		a:hover {text-decoration:underline ; color:dimgrey;}
-		a:active {text-decoration:none ; color:dimgrey;}
+		a:link {
+			text-decoration: none;
+			color: dimgrey;
+		}
+		a:visited {
+			text-decoration: none;
+			color: dimgrey;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: dimgrey;
+		}
+		a:active {
+			text-decoration: none;
+			color: dimgrey;
+		}
     </style>
 </head>
 
@@ -269,17 +249,35 @@
                     <span>2020.7 - 至今</span>
                 </header>
                 <p>
-                    公司web部分(pc&mobile)的核心技术栈为React,运用框架的各种特性完成了页面的用户交互及与后端的数据对接
+                    公司web部分(pc&mobile)的核心技术栈为 <strong> React+TypeScript+MobX</strong>,运用框架的各种特性完成了页面的用户交互及与后端的数据对接
                 </p>
                 <p>
-                    深度参与公司B端和C端的业务前端开发，参与了登录，购买，表单填写及其验证等产品模块
+                    深度参与公司B端和C端的业务前端开发，参与了登录，购买，表单填写及其验证等产品模块以及项目构建，打包，部署的过程
                 </p>
                 <p>
                     协助完成公司组件库由Antd迁移为内部实现的UI库，在项目的迭代开发过程中，拓展封装了其中的部分组件以及对应的单元测试和使用文档
                 </p>
                 <p>
-                    小程序部分：使用Tarojs开发，了解小程序和web的异同
+                    小程序部分：使用<strong>Taro</strong>开发了一个项目，了解小程序和web的异同
                 </p>
+                <p>
+                    与产品和UI配合，精确还原设计稿，并在项目迭代过程中维护并解决了不同设备的兼容性问题
+                </p>
+            </li>
+        </ol>
+    </section>
+    <section class="projects">
+        <h2>开源项目</h2>
+        <ol>
+            <li>
+                <header>
+                <h3>
+                    自制简易virtual dom
+                </h3>
+                <span>
+                    <a href="https://github.com/debugtheworldbot/virtual-dom">源码</a>
+                </span>
+                </header>
             </li>
         </ol>
     </section>
@@ -302,136 +300,136 @@
             </li>
         </ol>
     </section>
-<!--    <section class="projects">-->
-<!--        <h2>项目经历</h2>-->
-<!--        <ol>-->
-<!--            <li>-->
-<!--                <header>-->
-<!--                    <h3>闪电记账</h3>-->
-<!--                    <span>-->
-<!--                <a target="_blank" href="https://github.com/debugtheworldbot/morneyReact">源码链接</a>-->
-<!--              </span>-->
-<!--                </header>-->
-<!--                <p class="scan"><img src="react.png" alt="记账"></p>-->
+    <!--    <section class="projects">-->
+    <!--        <h2>项目经历</h2>-->
+    <!--        <ol>-->
+    <!--            <li>-->
+    <!--                <header>-->
+    <!--                    <h3>闪电记账</h3>-->
+    <!--                    <span>-->
+    <!--                <a target="_blank" href="https://github.com/debugtheworldbot/morneyReact">源码链接</a>-->
+    <!--              </span>-->
+    <!--                </header>-->
+    <!--                <p class="scan"><img src="react.png" alt="记账"></p>-->
 
-<!--                <p>基于React实现的记账页面</p>-->
-<!--                <p>特点是简单方便，快速记账，没有花里胡哨的东西</p>-->
-<!--                <p>因为主流的记账软件冗余的东西过多，就自己实现了一个极简记账应用 | 微信扫码预览=>-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    使用 <strong>React Router</strong>、<strong>TypeScript</strong>、<strong>自定义hooks</strong>等功能-->
-<!--                </p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <header>-->
-<!--                    <h3>清念tomato（小程序）</h3>-->
-<!--                    <span>-->
-<!--                <a target="_blank" href="https://github.com/debugtheworldbot/tomato">源码链接</a>-->
-<!--              </span>-->
+    <!--                <p>基于React实现的记账页面</p>-->
+    <!--                <p>特点是简单方便，快速记账，没有花里胡哨的东西</p>-->
+    <!--                <p>因为主流的记账软件冗余的东西过多，就自己实现了一个极简记账应用 | 微信扫码预览=>-->
+    <!--                </p>-->
+    <!--                <p>-->
+    <!--                    使用 <strong>React Router</strong>、<strong>TypeScript</strong>、<strong>自定义hooks</strong>等功能-->
+    <!--                </p>-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                <header>-->
+    <!--                    <h3>清念tomato（小程序）</h3>-->
+    <!--                    <span>-->
+    <!--                <a target="_blank" href="https://github.com/debugtheworldbot/tomato">源码链接</a>-->
+    <!--              </span>-->
 
-<!--                </header>-->
-<!--                <p class="scan"><img src="tomato.jpg" alt="小程序"></p>-->
-<!--                <p>-->
-<!--                    用小程序写的一个简易番茄闹钟</p>-->
-<!--                <p>实现了计时，创建任务，保存记录，完成历史等功能-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    使用 <strong>wxs</strong>，wxml，js，css等完成的多个页面-->
-<!--                </p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <header>-->
-<!--                    <h3>Vue实现共享社区</h3>-->
-<!--                    <span>-->
-<!--                <a target="_blank" href="https://jirengu-inc.github.io/vue-blog-preview/#/">项目预览</a>-->
-<!--              </span>-->
-<!--                </header>-->
-<!--                <p>-->
-<!--                    使用vue完成的一个共享博客社区</p>-->
-<!--                <p>包含了登录，注册，发帖，编辑，查看所有博客，查看我的博客等功能-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    这是我学习完vue的基本功能之后做的一个练手的项目，完成之后对vue等组件有了更深的理解-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    技术栈：<strong>Vue</strong>、 <strong>Vue Router</strong> 、<strong>Vuex</strong> 、 <strong>webpack</strong> 、<strong>es6</strong>-->
+    <!--                </header>-->
+    <!--                <p class="scan"><img src="tomato.jpg" alt="小程序"></p>-->
+    <!--                <p>-->
+    <!--                    用小程序写的一个简易番茄闹钟</p>-->
+    <!--                <p>实现了计时，创建任务，保存记录，完成历史等功能-->
+    <!--                </p>-->
+    <!--                <p>-->
+    <!--                    使用 <strong>wxs</strong>，wxml，js，css等完成的多个页面-->
+    <!--                </p>-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                <header>-->
+    <!--                    <h3>Vue实现共享社区</h3>-->
+    <!--                    <span>-->
+    <!--                <a target="_blank" href="https://jirengu-inc.github.io/vue-blog-preview/#/">项目预览</a>-->
+    <!--              </span>-->
+    <!--                </header>-->
+    <!--                <p>-->
+    <!--                    使用vue完成的一个共享博客社区</p>-->
+    <!--                <p>包含了登录，注册，发帖，编辑，查看所有博客，查看我的博客等功能-->
+    <!--                </p>-->
+    <!--                <p>-->
+    <!--                    这是我学习完vue的基本功能之后做的一个练手的项目，完成之后对vue等组件有了更深的理解-->
+    <!--                </p>-->
+    <!--                <p>-->
+    <!--                    技术栈：<strong>Vue</strong>、 <strong>Vue Router</strong> 、<strong>Vuex</strong> 、 <strong>webpack</strong> 、<strong>es6</strong>-->
 
-<!--                </p>-->
+    <!--                </p>-->
 
-<!--            </li>-->
-<!--            <li>-->
-<!--                <header>-->
-<!--                    <h3>simple presentation</h3>-->
-<!--                    <span>-->
-<!--                <a target="_blank" href="https://github.com/debugtheworldbot/simplePresentation">源码链接</a>-->
-<!--                <a target="_blank" href="https://debugtheworldbot.github.io/simplePresentation/index.html">项目预览</a>-->
-<!--              </span>-->
-<!--                </header>-->
-<!--                <p>-->
-<!--                    一个基于 <strong>JavaScript</strong>实现的一款简洁高效的<strong>在线ppt</strong>制作平台</p>-->
-<!--                <p>参考自 <a href="https://revealjs.com/">reavel.js</a> ,我发现这个工具方便好用，但是门槛较高，基本只有程序员才会使用</p>-->
-<!--                <p>所以我就基于它的功能做了改进，让其对新人更加友好，即使 <strong>不懂代码 </strong>也可以轻松操作 </p>-->
-<!--                <p>该工具支持<strong>markdown</strong>-->
-<!--                    语法，可在几分钟内完成ppt的制作。支持编辑内容，切换主体与特效，演讲者模式等功能</p>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <header>-->
-<!--                    <h3>前航网站</h3>-->
-<!--                    <span>-->
-<!--                <a href="https://github.com/debugtheworldbot/navi">源码链接</a>-->
-<!--                <a href="https://debugtheworldbot.github.io/navi/src/index.html">项目预览</a>-->
-<!--              </span>-->
-<!--                </header>-->
-<!--                <p>-->
-<!--                    一个基于 <strong>jQuery</strong> 实现的<strong>导航</strong>页面，极简且符合审美，简约而不简单-->
-<!--                </p>-->
-<!--                <p>-->
-<!--                    包括添加，删除网址，搜索，保存本地记录等功能-->
-<!--                </p>-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                <header>-->
+    <!--                    <h3>simple presentation</h3>-->
+    <!--                    <span>-->
+    <!--                <a target="_blank" href="https://github.com/debugtheworldbot/simplePresentation">源码链接</a>-->
+    <!--                <a target="_blank" href="https://debugtheworldbot.github.io/simplePresentation/index.html">项目预览</a>-->
+    <!--              </span>-->
+    <!--                </header>-->
+    <!--                <p>-->
+    <!--                    一个基于 <strong>JavaScript</strong>实现的一款简洁高效的<strong>在线ppt</strong>制作平台</p>-->
+    <!--                <p>参考自 <a href="https://revealjs.com/">reavel.js</a> ,我发现这个工具方便好用，但是门槛较高，基本只有程序员才会使用</p>-->
+    <!--                <p>所以我就基于它的功能做了改进，让其对新人更加友好，即使 <strong>不懂代码 </strong>也可以轻松操作 </p>-->
+    <!--                <p>该工具支持<strong>markdown</strong>-->
+    <!--                    语法，可在几分钟内完成ppt的制作。支持编辑内容，切换主体与特效，演讲者模式等功能</p>-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                <header>-->
+    <!--                    <h3>前航网站</h3>-->
+    <!--                    <span>-->
+    <!--                <a href="https://github.com/debugtheworldbot/navi">源码链接</a>-->
+    <!--                <a href="https://debugtheworldbot.github.io/navi/src/index.html">项目预览</a>-->
+    <!--              </span>-->
+    <!--                </header>-->
+    <!--                <p>-->
+    <!--                    一个基于 <strong>jQuery</strong> 实现的<strong>导航</strong>页面，极简且符合审美，简约而不简单-->
+    <!--                </p>-->
+    <!--                <p>-->
+    <!--                    包括添加，删除网址，搜索，保存本地记录等功能-->
+    <!--                </p>-->
 
-<!--            </li>-->
-<!--            <li>-->
-<!--                <header>-->
-<!--                    <h3>自动画皮卡丘</h3>-->
-<!--                    <span>-->
-<!--                <a target="_blank" href="https://github.com/debugtheworldbot/pikachu">源码链接</a>-->
-<!--                <a target="_blank" href="https://debugtheworldbot.github.io/pikachu/index.html">项目预览</a>-->
-<!--              </span>-->
-<!--                </header>-->
-<!--                <p>-->
-<!--                    利用 <strong>CSS3</strong> 实现的作品</p>-->
-<!--                <p>支持速度控制，随着CSS内容的一步步添加，逐渐完成一个简易皮卡丘</p>-->
-<!--            </li>-->
-<!--        </ol>-->
-<!--    </section>-->
+    <!--            </li>-->
+    <!--            <li>-->
+    <!--                <header>-->
+    <!--                    <h3>自动画皮卡丘</h3>-->
+    <!--                    <span>-->
+    <!--                <a target="_blank" href="https://github.com/debugtheworldbot/pikachu">源码链接</a>-->
+    <!--                <a target="_blank" href="https://debugtheworldbot.github.io/pikachu/index.html">项目预览</a>-->
+    <!--              </span>-->
+    <!--                </header>-->
+    <!--                <p>-->
+    <!--                    利用 <strong>CSS3</strong> 实现的作品</p>-->
+    <!--                <p>支持速度控制，随着CSS内容的一步步添加，逐渐完成一个简易皮卡丘</p>-->
+    <!--            </li>-->
+    <!--        </ol>-->
+    <!--    </section>-->
     <div style="page-break-after: always;"></div>
-<!--    <section class="skills">-->
-<!--        <h2>技能</h2>-->
-<!--        <div class="wrapper">-->
-<!--            <ul>-->
-<!--                <li>熟悉页面制作技巧，能将设计稿<strong>基本还原</strong></li>-->
-<!--                <li>-->
-<!--                    熟悉<strong>前后端分离</strong>技术，包括-->
-<!--                    AJAX、跨域、前端路由、Cookie、Session 等-->
-<!--                </li>-->
-<!--                <li>熟悉 ES6，包括 let / Promise / await / 析构赋值等</li>-->
-<!--                <li>-->
-<!--                    了解 <strong>TypeScript</strong> 的使用-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </section>-->
+    <!--    <section class="skills">-->
+    <!--        <h2>技能</h2>-->
+    <!--        <div class="wrapper">-->
+    <!--            <ul>-->
+    <!--                <li>熟悉页面制作技巧，能将设计稿<strong>基本还原</strong></li>-->
+    <!--                <li>-->
+    <!--                    熟悉<strong>前后端分离</strong>技术，包括-->
+    <!--                    AJAX、跨域、前端路由、Cookie、Session 等-->
+    <!--                </li>-->
+    <!--                <li>熟悉 ES6，包括 let / Promise / await / 析构赋值等</li>-->
+    <!--                <li>-->
+    <!--                    了解 <strong>TypeScript</strong> 的使用-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </section>-->
 
-<!--    <section class="others">-->
-<!--        <h2>其他链接</h2>-->
-<!--        我的-->
-<!--        <a-->
-<!--                href="https://juejin.im/user/5e8c43026fb9a03c97753b1a/posts"-->
-<!--        >博客</a-->
-<!--        > <a href="https://github.com/debugtheworldbot">GitHub</a>-->
-<!--        <a href="https://www.douban.com/people/133075607/">豆瓣记录</a>-->
+    <!--    <section class="others">-->
+    <!--        <h2>其他链接</h2>-->
+    <!--        我的-->
+    <!--        <a-->
+    <!--                href="https://juejin.im/user/5e8c43026fb9a03c97753b1a/posts"-->
+    <!--        >博客</a-->
+    <!--        > <a href="https://github.com/debugtheworldbot">GitHub</a>-->
+    <!--        <a href="https://www.douban.com/people/133075607/">豆瓣记录</a>-->
 
-<!--    </section>-->
+    <!--    </section>-->
 </article>
 </body>
 </html>
