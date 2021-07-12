@@ -103,27 +103,11 @@
         justify-content: space-between;
         color: #666;
       }
+      .projects a{
+        margin: 0 4px;
+      }
       .projects > ul > li h3 {
         display: inline-block;
-      }
-    </style>
-    <style>
-      .skills > .wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
-      .skills > .wrapper > :first-child {
-        margin-right: 24px;
-      }
-      .skills > .wrapper > ul {
-        color: #666;
-      }
-      .skills > .wrapper strong {
-        color: #f60;
-      }
-      .skills > .wrapper > ul > li {
-        line-height: 1.2;
-        margin-bottom: 8px;
       }
     </style>
     <style>
@@ -141,28 +125,6 @@
         justify-content: space-between;
       }
     </style>
-    <style>
-      .jobs > ol > li {
-        margin: 12px 0;
-      }
-      .jobs header {
-        display: flex;
-        color: #666;
-        margin-bottom: 12px;
-      }
-      .jobs header > h3 {
-        font-size: 18px;
-        color: #333;
-      }
-      .jobs header > h4 {
-        margin-left: 1em;
-        font-size: 18px;
-      }
-      .jobs header > span {
-        font-size: 18px;
-        margin-left: auto;
-      }
-    </style>
 
     <style>
       @media (max-width: 500px) {
@@ -174,20 +136,6 @@
           width: auto;
           height: auto;
           margin-bottom: 50px;
-        }
-        .bio img {
-          display: none;
-        }
-        .skills .wrapper {
-          flex-direction: column;
-        }
-        .jobs header {
-          flex-direction: column;
-        }
-        .jobs header > h3,
-        .jobs header > h4,
-        .jobs header > span {
-          margin: 0;
         }
       }
     </style>
@@ -256,16 +204,16 @@
         <ul>
           <li>
             公司web部分(pc&mobile)的核心技术栈为
-            <strong> React+TypeScript+MobX</strong>
+            <strong> React/TypeScript/MobX</strong>
           </li>
           <li>
             深度参与公司B端和C端的业务前端开发，参与了登录，购买，表单填写及其验证等产品模块
           </li>
           <li>
-            主导了推进了公司官网的更新，可以利用第三方库实现炫酷流畅的动画,对项目管理有一定的理解
+            主导了推进了公司官网的更新，可以利用第三方库实现炫酷流畅的动画，对项目管理有一定的理解
           </li>
           <li>
-            参与了完成了页面的用户交互,与后端的数据对接以及项目构建，打包，部署等工作
+            参与了完成了页面的用户交互，与后端的数据对接以及项目构建，打包，部署等工作
           </li>
           <li>
             协助完成公司组件库，在项目的迭代开发过程中，拓展封装了部分组件以及对应的单元测试
@@ -285,32 +233,12 @@
         <h2>开源小项目</h2>
 
         <header>
-          <h3>简易 virtual dom</h3>
-          <span>
-            <a
-              target="_blank"
-              href="https://github.com/debugtheworldbot/virtual-dom"
-              >源码</a
-            >
-          </span>
-        </header>
-        <ul>
-          <li>从零开始，构建一个简单的virtual dom以及dom diff</li>
-          <li>
-            实现的diff可以处理节点的增加与删除，以及监听一层节点的attrs的变化
-          </li>
-          <li>
-            关于整个流程，我写了一篇
-            <a
-              target="_blank"
-              href="https://debugtheworldbot.github.io/2021/04/15/vDOM/"
-              >博客</a
-            > 记录了整个过程
-          </li>
-        </ul>
-        <header>
           <h3>简易 Redux</h3>
           <span>
+            <a
+            target="_blank"
+            href="https://debugtheworldbot.github.io/2021/04/13/redux"
+            >博客</a>
             <a
               target="_blank"
               href="https://github.com/debugtheworldbot/simple-redux"
@@ -320,17 +248,51 @@
         </header>
         <ul>
           <li>
-            使用Vanilla JS，实现了redux的<strong> getState subscribe dispatch </strong>等核心功能
-          </li>
-          <li>
-            关于我的思路和想法，同样地，我写了一篇
-            <a
-              target="_blank"
-              href="https://debugtheworldbot.github.io/2021/04/27/redux-2/"
-              >博客</a
-            > 来记录
+            使用react的createContext，实现了redux的<strong> getState subscribe dispatch </strong>等核心功能
           </li>
         </ul>
+        <header>
+          <h3>mini-pack 一个自建webpack</h3>
+          <span>
+            <a
+            target="_blank"
+            href="https://debugtheworldbot.github.io/2021/04/15/vDOM"
+            >博客</a>
+            <a
+              target="_blank"
+              href="https://github.com/debugtheworldbot/miniWebpack"
+              >源码</a
+            >
+          </span>
+        </header>
+        <ul>
+          <li>它可在在内部构建依赖图谱，此依赖图对应文件所需的依赖，生成一个或多个bundle</li>
+          <li> 通过entry point开始解析生成assets，把代码转换成可直接在浏览器运行的代码 </li>
+          <li> 根据assets和其引用的文件构建依赖图谱，生成bundle文件 </li>
+        </ul>
+        <header>
+          <h3>简易 virtual dom</h3>
+          <span>
+            <a
+            target="_blank"
+            href="https://debugtheworldbot.github.io/2021/04/15/vDOM"
+            >博客</a
+          >
+            <a
+              target="_blank"
+              href="https://github.com/debugtheworldbot/virtual-dom"
+              >源码</a
+            >
+          </span>
+        </header>
+        <ul>
+          <li>构建一个简单的virtual dom以及dom diff</li>
+          <li>创建虚拟节点，比较虚拟节点，把虚拟节点替换成真实节点，最后挂载到DOM上</li>
+          <li>
+            我实现的diff可以处理节点的增加与删除，以及监听一层节点的attrs的变化
+          </li>
+        </ul>
+
         <header>
           <h3>通过GraphQL构建 hackernews </h3>
           <span>
@@ -342,7 +304,7 @@
           </span>
         </header>
         <ul>
-          <li>服务端使用的是<strong> Apollo+Prisma+nodejs</strong> ,前端是react</li>
+          <li>服务端使用的是<strong> Apollo+Prisma+nodejs</strong> 前端是react</li>
           <li>实现了博客系统的增删改查以及登录注册鉴权等功能</li>
           <li>
             这是我的 <a
@@ -368,15 +330,15 @@
         <h2>技能列表</h2>
           <ul>
             <li>
-              熟悉<strong>JavaScript</strong>,<strong>TypeScript</strong> ，掌握
+              熟悉<strong>JavaScript</strong> <strong>TypeScript</strong> ，掌握
               ES6+ 语法，持续关注 ECMAScript 标准
             </li>
             <li>
-              在项目中使用过<strong> WebPack</strong>,<strong> Parcel</strong
-              >,<strong> Vite</strong>等打包工具，了解前端工程化构建流程
+              在项目中使用过<strong> WebPack</strong> <strong> Parcel</strong
+              > <strong> Vite</strong>等打包工具，了解前端工程化构建流程
             </li>
             <li>
-              熟悉<strong>React</strong>，关注react周边社区，并了解一部分框架的思想，编码风格比较偏向函数式
+              熟悉<strong>React</strong>关注react周边社区，并了解一部分框架的思想，编码风格比较偏向函数式
             </li>
             <li>
               熟悉<strong> Lodash，swr，AntDesign </strong>等各类react周边工具库的使用，能根据实际需求进行二次封装
