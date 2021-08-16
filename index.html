@@ -204,13 +204,10 @@
         <ul>
           <li>
             公司web部分(pc&mobile)的核心技术栈为
-            <strong> React/TypeScript/MobX</strong>
+            <strong> React TypeScript MobX</strong>
           </li>
           <li>
             深度参与公司B端和C端的业务前端开发，参与了登录，购买，表单填写及其验证等产品模块
-          </li>
-          <li>
-            主导了推进了公司官网的更新，可以利用第三方库实现炫酷流畅的动画，对项目管理有一定的理解
           </li>
           <li>
             参与了完成了页面的用户交互，与后端的数据对接以及项目构建，打包，部署等工作
@@ -219,15 +216,48 @@
             协助完成公司组件库，在项目的迭代开发过程中，拓展封装了部分组件以及对应的单元测试
           </li>
           <li>
-            与产品和UI配合，精确还原设计稿，并在项目迭代过程中维护并解决了不同设备的兼容性问题
+            与产品和UI配合，讨论需求，精确还原设计稿，实现部分交互动画
           </li>
           <li>
-              平时会主动在团队内部做一些近期的学习分享，新技术的介绍等内容
+            平时会主动在团队内部做一些近期的学习分享，新技术的介绍等内容
           </li>
         </ul>
       </section>
       <section class="projects">
         <h2>开源小项目</h2>
+
+        <header>
+          <h3>一个简单的 react</h3>
+          <span>
+            <a
+            target="_blank"
+            href="https://debugtheworldbot.github.io/redesigned-react"
+            >demo</a>
+            <a
+            target="_blank"
+            href="https://debugtheworldbot.github.io/2021/08/13/react/"
+            >博客</a>
+            <a
+              target="_blank"
+              href="https://github.com/debugtheworldbot/redesigned-react"
+              >源码</a
+            >
+          </span>
+        </header>
+        <ul>
+          <li>
+            完成了对 react 中 <strong> fiber commitRoot Reconclie</strong> 等功能的实现
+          </li>
+          <li>
+            利用 requestIdleCallback 实现<strong> concurrent mode</strong>
+          </li>
+          <li>
+            在 reconcile 阶段对比新老 fiber 并打上 effectTag
+          </li>
+          <li>
+            之后在 commit 阶段来处理 effectTag 并把变化作用到到真实的 dom 上
+          </li>
+        </ul>
 
         <header>
           <h3>简易 Redux</h3>
