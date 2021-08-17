@@ -23,9 +23,6 @@
         overflow: auto;
         padding: 2em;
       }
-    </style>
-
-    <style>
       p {
         margin: 0.3em 0;
       }
@@ -64,26 +61,28 @@
       li {
         color: #666;
       }
-      strong {
-        font-weight: normal;
-      }
       h3,
       h4,
       h5,
       h6 {
         margin: 0;
       }
-      .bio {
-        position: relative;
-      }
-      .bio img {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
     </style>
 
     <style>
+      .education header {
+        display: flex;
+        justify-content: space-between;
+        color: #666;
+      }
+      .education header > div {
+        display: flex;
+        align-items: center;
+      }
+      .education header > div > span {
+        margin-left: 20px;
+      }
+
       .projects p {
         color: #666;
       }
@@ -103,26 +102,11 @@
         justify-content: space-between;
         color: #666;
       }
-      .projects a{
+      .projects a {
         margin: 0 4px;
       }
       .projects > ul > li h3 {
         display: inline-block;
-      }
-    </style>
-    <style>
-      .openSource header img {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .openSource > ul > li {
-        margin-bottom: 24px;
-      }
-      .openSource header {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
       }
     </style>
 
@@ -137,13 +121,6 @@
           height: auto;
           margin-bottom: 50px;
         }
-      }
-    </style>
-    <style>
-      .scan > img {
-        width: 90px;
-        margin-left: 640px;
-        position: absolute;
       }
     </style>
     <style media="print">
@@ -203,11 +180,12 @@
         </header>
         <ul>
           <li>
-            公司web部分(pc&mobile)的核心技术栈为
+            公司 web 部分( pc & mobile )的核心技术栈为
             <strong> React TypeScript MobX</strong>
           </li>
           <li>
-            深度参与公司B端和C端的业务前端开发，参与了登录，购买，表单填写及其验证等产品模块
+            深度参与公司 B 端和 C
+            端的业务前端开发，参与了登录，购买，表单填写及其验证等产品模块
           </li>
           <li>
             参与了完成了页面的用户交互，与后端的数据对接以及项目构建，打包，部署等工作
@@ -215,13 +193,19 @@
           <li>
             协助完成公司组件库，在项目的迭代开发过程中，拓展封装了部分组件以及对应的单元测试
           </li>
-          <li>
-            与产品和UI配合，讨论需求，精确还原设计稿，实现部分交互动画
-          </li>
-          <li>
-            平时会主动在团队内部做一些近期的学习分享，新技术的介绍等内容
-          </li>
+          <li>与产品和 UI 配合，讨论需求，精确还原设计稿，实现部分交互动画</li>
+          <li>平时会主动在团队内部做一些近期的学习分享，新技术的介绍等内容</li>
         </ul>
+      </section>
+      <section class="education">
+        <h2>教育经历</h2>
+        <header>
+          <div>
+            <h3>华东理工大学</h3>
+            <span> 药物制剂 本科 </span>
+          </div>
+          <p>2016 - 2020</p>
+        </header>
       </section>
       <section class="projects">
         <h2>开源小项目</h2>
@@ -230,13 +214,15 @@
           <h3>一个简单的 react</h3>
           <span>
             <a
-            target="_blank"
-            href="https://debugtheworldbot.github.io/redesigned-react"
-            >demo</a>
+              target="_blank"
+              href="https://debugtheworldbot.github.io/redesigned-react"
+              >demo</a
+            >
             <a
-            target="_blank"
-            href="https://debugtheworldbot.github.io/2021/08/13/react/"
-            >博客</a>
+              target="_blank"
+              href="https://debugtheworldbot.github.io/2021/08/13/react/"
+              >博客</a
+            >
             <a
               target="_blank"
               href="https://github.com/debugtheworldbot/redesigned-react"
@@ -246,14 +232,13 @@
         </header>
         <ul>
           <li>
-            完成了对 react 中 <strong> fiber commitRoot Reconclie</strong> 等功能的实现
+            完成了对 react 中
+            <strong> fiber commitRoot Reconclie</strong> 等功能的实现
           </li>
           <li>
             利用 requestIdleCallback 实现<strong> concurrent mode</strong>
           </li>
-          <li>
-            在 reconcile 阶段对比新老 fiber 并打上 effectTag
-          </li>
+          <li>在 reconcile 阶段对比新老 fiber 并打上 effectTag</li>
           <li>
             之后在 commit 阶段来处理 effectTag 并把变化作用到到真实的 dom 上
           </li>
@@ -263,9 +248,10 @@
           <h3>简易 Redux</h3>
           <span>
             <a
-            target="_blank"
-            href="https://debugtheworldbot.github.io/2021/04/13/redux"
-            >博客</a>
+              target="_blank"
+              href="https://debugtheworldbot.github.io/2021/04/13/redux"
+              >博客</a
+            >
             <a
               target="_blank"
               href="https://github.com/debugtheworldbot/simple-redux"
@@ -274,23 +260,20 @@
           </span>
         </header>
         <ul>
-          <li>
-            使用react的createContext实现了一个基本的redux
-          </li>
+          <li>使用 react 的 createContext 实现了一个包含基本功能的 redux</li>
           <li>
             包括<strong> getState subscribe dispatch connect </strong>等核心功能
           </li>
-          <li>
-            同时也支持精准渲染，函数Action，异步Action等
-          </li>
+          <li>同时也支持精准渲染，函数 Action，异步 Action 等</li>
         </ul>
         <header>
           <h3>mini-pack 一个自建webpack</h3>
           <span>
             <a
-            target="_blank"
-            href="https://debugtheworldbot.github.io/2021/07/06/minipack"
-            >博客</a>
+              target="_blank"
+              href="https://debugtheworldbot.github.io/2021/07/06/minipack"
+              >博客</a
+            >
             <a
               target="_blank"
               href="https://github.com/debugtheworldbot/miniWebpack"
@@ -299,40 +282,26 @@
           </span>
         </header>
         <ul>
-          <li>它可在在内部构建依赖图谱，此依赖图对应文件所需的依赖，生成一个或多个bundle</li>
-          <li> 通过entry point开始解析生成assets，把代码转换成可直接在浏览器运行的代码 </li>
-          <li> 根据assets和其引用的文件构建依赖图谱，生成bundle文件 </li>
-        </ul>
-        <header>
-          <h3>简易 virtual dom</h3>
-          <span>
-            <a
-            target="_blank"
-            href="https://debugtheworldbot.github.io/2021/04/15/vDOM"
-            >博客</a
-          >
-            <a
-              target="_blank"
-              href="https://github.com/debugtheworldbot/virtual-dom"
-              >源码</a
-            >
-          </span>
-        </header>
-        <ul>
-          <li>构建一个简单的virtual dom以及dom diff</li>
-          <li>创建虚拟节点，比较虚拟节点，把虚拟节点替换成真实节点，最后挂载到DOM上</li>
           <li>
-            我实现的diff可以处理节点的增加与删除，以及监听一层节点的attrs的变化
+            它可在在内部构建依赖图谱，此依赖图对应文件所需的依赖，生成一个或多个
+            bundle 文件
           </li>
+          <li>
+            通过 entry point 开始解析生成
+            assets，把代码转换成可直接在浏览器运行的代码
+          </li>
+          <li>根据 assets 和其引用的文件构建依赖图谱，生成 bundle 文件</li>
         </ul>
 
         <header>
-          <h3>通过GraphQL构建 hackernews </h3>
+          <h3>通过GraphQL构建 hackernews</h3>
           <span>
             <a
               target="_blank"
-              href="https://debugtheworldbot.github.io/2021/05/24/graphql-1">
-            博客</a>
+              href="https://debugtheworldbot.github.io/2021/05/24/graphql-1"
+            >
+              博客</a
+            >
             <a
               target="_blank"
               href="https://github.com/debugtheworldbot/graphql-apollo"
@@ -341,46 +310,40 @@
           </span>
         </header>
         <ul>
-          <li>服务端使用的是<strong> Apollo+Prisma+nodejs</strong> 前端是react</li>
+          <li>
+            服务端使用的是<strong> Apollo Prisma nodejs</strong> 前端是 react
+          </li>
           <li>实现了博客系统的增删改查以及登录注册鉴权等功能</li>
         </ul>
       </section>
-      <section class="projects">
-        <h2>教育经历</h2>
-        <header>
-          <div>
-            <h3>华东理工大学</h3>
-            <p> 药物制剂 本科 </span>
-          </div>
-          <p>2016 - 2020</p>
-        </header>
-      </section>
+
       <div style="page-break-after: always"></div>
       <section class="skills">
         <h2>技能列表</h2>
-          <ul>
-            <li>
-              熟悉<strong>JavaScript</strong> <strong>TypeScript</strong> ，掌握
-              ES6+ 语法，持续关注 ECMAScript 标准
-            </li>
-            <li>
-              在项目中使用过<strong> WebPack</strong> <strong> Parcel</strong
-              > <strong> Vite</strong>等打包工具，了解前端工程化构建流程
-            </li>
-            <li>
-              熟悉<strong>React</strong>关注react周边社区，并了解一部分框架的思想，编码风格比较偏向函数式
-            </li>
-            <li>
-              熟悉<strong> Lodash，swr，AntDesign </strong>等各类react周边工具库的使用，能根据实际需求进行二次封装
-            </li>
-            <li>
-              能够使用 <strong>HTML5</strong> 和<strong> CSS3 </strong
-              >进行符合Web标准的语义化开发，具有像素级还原设计稿的能力
-            </li>
-            <li>
-              可流畅阅读英文文档，博客等，获取第一手的技术内容
-            </li>
-          </ul>
+        <ul>
+          <li>
+            熟悉<strong> JavaScript TypeScript</strong> ，了解 ES6+
+            语法，持续关注 ECMAScript 标准
+          </li>
+          <li>
+            在项目中使用过<strong> WebPack Parcel Vite </strong
+            >等打包工具，了解前端工程化构建流程
+          </li>
+          <li>
+            熟悉<strong> React </strong
+            >关注其周边社区，了解一部分框架的思想，编码风格比较偏向函数式
+          </li>
+          <li>
+            熟悉<strong> Lodash AntDesign </strong>等各类 react
+            周边工具库的使用，可以根据实际需求进行二次封装
+          </li>
+          <li>
+            能够使用
+            <strong>HTML5 CSS3 </strong
+            >进行符合Web标准的语义化开发，具有像素级还原设计稿的能力
+          </li>
+          <li>可流畅阅读英文文档，博客等，获取第一手的技术或非技术内容</li>
+        </ul>
       </section>
     </article>
   </body>
